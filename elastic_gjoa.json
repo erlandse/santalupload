@@ -1,0 +1,170 @@
+{
+    "mappings": {
+      "gjenstand": {
+        "properties": {
+          "bFolkegruppe": {
+            "type": "text",
+            "analyzer": "norwegian"
+          },
+          "bNasjon": {
+            "type": "text",
+            "analyzer": "standard"
+          },
+          "bOmraade": {
+            "type": "text",
+            "analyzer": "standard"
+          },
+          "bruksOpplysninger": {
+            "type": "text",
+            "analyzer": "standard"
+          },
+          "by_bygd": {
+            "type": "keyword",
+            "index": false,
+            "store": true
+          },
+          "facetFolkegruppe": {
+            "type": "keyword",
+            "store": true
+          },
+          "facetMateriale": {
+            "type": "keyword",
+            "store": true
+          },
+          "facetNasjon": {
+            "type": "keyword",
+            "store": true
+          },
+          "facetOmraade": {
+            "type": "keyword",
+            "store": true
+          },
+          "facetOutline": {
+            "type": "keyword",
+            "store": true
+          },
+          "fotograf": {
+            "type": "keyword",
+            "index": false,
+            "store": true
+          },
+          "fotoid": {
+            "type": "keyword",
+            "index": false,
+            "store": true
+          },
+          "gjenstandemisk": {
+            "type": "keyword",
+            "store": true
+          },
+          "gjenstandsbeskrivelse": {
+            "type": "text",
+            "analyzer": "standard"
+          },
+          "gjenstandsterm": {
+            "type": "keyword",
+            "store": true
+          },
+          "gjtype": {
+            "type": "keyword",
+            "store": true
+          },
+          "harFoto": {
+            "type": "integer",
+            "store": true
+          },
+          "id": {
+            "type": "long"
+          },
+          "landsdel": {
+            "type": "keyword",
+            "store": true
+          },
+          "lokalitet": {
+            "type": "keyword",
+            "store": true
+          },
+          "materiale": {
+            "type": "text",
+            "analyzer": "standard"
+          },
+          "matremisk": {
+            "type": "keyword",
+            "store": true
+          },
+          "mediaId": {
+            "type": "keyword",
+            "index": false,
+            "store": true
+          },
+          "museumsnr": {
+            "type": "keyword",
+            "store": true
+          },
+          "nasjon": {
+            "type": "text",
+            "analyzer": "standard"
+          },
+          "ocmkode": {
+            "type": "keyword",
+            "store": true
+          },
+          "ocmtekst": {
+            "type": "text",
+            "analyzer": "standard"
+          },
+          "omraade": {
+            "type": "text",
+            "analyzer": "standard"
+          },
+          "originaltsted": {
+            "type": "keyword",
+            "index": false,
+            "store": true
+          },
+          "outline": {
+            "type": "text",
+            "analyzer": "standard"
+          },
+          "owc": {
+            "type": "keyword",
+            "store": true
+          },
+          "pFolkegruppe": {
+            "type": "text",
+            "analyzer": "standard"
+          },
+          "pNasjon": {
+            "type": "text",
+            "analyzer": "standard"
+          },
+          "pOmraade": {
+            "type": "text",
+            "analyzer": "standard"
+          },
+          "produksjonsOpplysninger": {
+            "type": "text",
+            "analyzer": "standard"
+          },
+          "stedtekst": {
+            "type": "keyword",
+            "index": false,
+            "store": true
+          },
+          "unr": {
+            "type": "text",
+            "index": false,
+            "store": true,
+            "analyzer": "standard"
+          }
+        }
+      }
+    },
+    "settings": {
+      "index": {
+        "number_of_shards": "1",
+        "number_of_replicas": "1"
+      }
+    }
+
+}
